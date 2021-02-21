@@ -28,24 +28,25 @@
     </div>
     <h2>Advanced search</h2>
     <hr>
-    <form action="">
+    <form action="https://google.com/search" oninput="q.value = q1.value + ' ' + q3.value.split(' ').join(' OR ') + ' &quot' + q2.value +'&quot' + ' -' + q4.value.split(' ').join(' -') ">
         <div class="advancesearch">
             <div class="input-group input-group-sm mb-3">
                 <span class="input-group-text" id="inputGroup-sizing-sm">Any of these words:</span>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                <input type="text" class="form-control" id="q1" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
             </div>
             <div class="input-group input-group-sm mb-3">
                 <span class="input-group-text" id="inputGroup-sizing-sm">This exact word or phrase:</span>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                <input type="text" class="form-control" id="q2" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
             </div>
             <div class="input-group input-group-sm mb-3">
                 <span class="input-group-text" id="inputGroup-sizing-sm">Any of these words:</span>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                <input type="text" class="form-control" id="q3" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
             </div>
             <div class="input-group input-group-sm mb-3">
                 <span class="input-group-text" id="inputGroup-sizing-sm">None of these words:</span>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                <input type="text" class="form-control" id="q4" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
             </div>
+            <input type="text" id="q4" hidden>
         </div>
         <div class="bottom" id="advancebottom">
             <input type="submit" class="submitbutton" id="advancebutton" value="Advance Search" name="btnK">
