@@ -1,0 +1,18 @@
+a{
+    
+    color: black;
+    text-decoration-line: none;
+    font-size: 20px;
+}
+a:hover{
+    color: black;
+    text-decoration-line: underline;
+}
+.Navbar{
+    padding: 20px;
+    margin-right: 20px;
+}
+.logo{
+    text-align: center;
+    margin-top: 120px;
+}
