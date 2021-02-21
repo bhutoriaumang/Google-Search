@@ -2,19 +2,69 @@ a{
     
     color: black;
     text-decoration-line: none;
-    font-size: 20px;
+    font-size: 18px;
 }
 a:hover{
     color: black;
     text-decoration-line: underline;
 }
-.Navbar{
+.Navbar,.Navbaradvanced{
     padding: 20px;
     margin-right: 20px;
 }
+#advancednavbar{
+    width:auto;
+}
+.top{
+    padding-left: 15px;
+    background-color: rgb(230, 230, 230);
+}
+
+h2{
+    margin-left: 50px;
+    margin-top: 20px;
+    color: rgba(255, 0, 0, 0.884);
+}
+
+h2,h3,h5{
+    font-weight: normal;
+}
+
+h5{
+    display: inline-block;
+    font-size: 25px;
+}
+
+.advancesearch{
+    margin: 10px;
+    margin-left: 50px;
+}
+
 .logo{
     text-align: center;
     margin-top: 120px;
+}
+
+#advancesearchbar{
+    margin: 10px;
+    height: 30px;
+    display: inline-block;
+    
+}
+
+#advanceinput{
+    height: 99%;
+    width: 99%;
+}
+
+.headings,.searchfields{
+    height: 200px;
+    display: inline-block;
+    text-align: left;
+}
+.headings{
+    width: 300px;
+    border-spacing: 5px;
 }
 
 .textinput{
@@ -44,6 +94,13 @@ a:hover{
     margin-top: 0.5%;
     text-align: center;
 }
+
+#advancebottom{
+    text-align: right;
+    width: 100%;
+    padding-right: 50px;
+}
+
 .submitbutton{
     background-color: white;
     outline: none;
@@ -53,6 +110,17 @@ a:hover{
     margin: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+#advancebutton{
+    background-color: #4d90fe;
+    border: 1px solid #3079ed;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
 .submitbutton:hover{
     border: 1px solid grey;
     border-radius: 5px;

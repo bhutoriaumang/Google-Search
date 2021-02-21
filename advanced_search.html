@@ -1,18 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Search</title>
-    </head>
-    <body>
-        Find pages with...
-        <form action="https://google.com/search" oninput="q.value = q1.value + ' ' + q3.value.split(' ').join(' OR ') + ' &quot' + q2.value +'&quot' + ' -' + q4.value.split(' ').join(' -') ">
-            all these words: <input type="text" name="q1"> <br>
-            this exact word or phrase: <input type="text" name="q2"> <br>
-            any of these words: <input type="text" name="q3"> <br>
-            none of these words: <input type="text" name="q4"> <br>
-            <input type="text" name="q" hidden>
-            <input type="submit" value="Google Search">
-        </form>
-        <a href="index.html">Go back</a>
-    </body>
+  <head>
+    <title>Search</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="top">
+        <div style="width: 25%; display: inline-block;">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="googlelogo" width="120px">
+        </div>
+        <div class="Navbar" id="advancednavbar" style="width: 70%; display: inline-block;">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="image_search.html">Images</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="index.html">Normal search</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <h2>Advanced search</h2>
+    <hr>
+    <form action="">
+        <div class="advancesearch">
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Any of these words:</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">This exact word or phrase:</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Any of these words:</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">None of these words:</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            </div>
+        </div>
+        <div class="bottom" id="advancebottom">
+            <input type="submit" class="submitbutton" id="advancebutton" value="Advance Search" name="btnK">
+        </div>
+    </form>
+</body>
 </html>
