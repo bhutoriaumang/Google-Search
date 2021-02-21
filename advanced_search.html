@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+    </head>
+    <body>
+        Find pages with...
+        <form action="https://google.com/search" oninput="q.value = q1.value + ' ' + q3.value.split(' ').join(' OR ') + ' &quot' + q2.value +'&quot' + ' -' + q4.value.split(' ').join(' -') ">
+            all these words: <input type="text" name="q1"> <br>
+            this exact word or phrase: <input type="text" name="q2"> <br>
+            any of these words: <input type="text" name="q3"> <br>
+            none of these words: <input type="text" name="q4"> <br>
+            <input type="text" name="q" hidden>
+            <input type="submit" value="Google Search">
+        </form>
+        <a href="index.html">Go back</a>
+    </body>
+</html>
