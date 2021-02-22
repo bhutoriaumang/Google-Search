@@ -47,6 +47,11 @@ h5{
     margin-top: 120px;
 }
 
+.image_logo{
+    text-align: center;
+    margin-top: 67px;
+}
+
 #advancesearchbar{
     margin: 10px;
     height: 30px;
@@ -126,4 +131,9 @@ h5{
 .submitbutton:hover{
     border: 1px solid grey;
     border-radius: 5px;
+}
+
+p{
+    font-size: larger;
+    margin-bottom: 20px;
 }
