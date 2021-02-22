@@ -9,6 +9,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-height,initial-scale=1.0">
   </head>
   <body>
     <div class="top">
@@ -33,33 +34,37 @@
         <div class="advancesearch">
             <p>Find pages with...</p>
             <div class="row mb-3">
-                <label for="colFormLabel" class="col-sm-2 col-form-label">all these words:</label>
-                <div class="col-sm-10">
-                <input type="text" class="form-control" name="q1" id="colFormLabel" >
+                <label for="colFormLabel" class="col-sm-2 col-form-label"><div style="width: max-content;">all these words:</div></label>
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                <input type="text" class="form-control" name="q1" id="colFormLabel">
                 </div>
             </div>
             <div class="row mb-3">
-                <label for="colFormLabel" class="col-sm-2 col-form-label">this exact word or phrase:</label>
-                <div class="col-sm-10">
+                <label for="colFormLabel" class="col-sm-2 col-form-label"><div style="width: max-content;">this exact word or phrase:</div></label>
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
                 <input type="text" class="form-control" name="q2" id="colFormLabel" >
                 </div>
             </div>
             <div class="row mb-3">
-                <label for="colFormLabel" class="col-sm-2 col-form-label">any of these words:</label>
-                <div class="col-sm-10">
+                <label for="colFormLabel" class="col-sm-2 col-form-label"><div style="width: max-content;">any of these words:</div></label>
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
                 <input type="text" class="form-control" name="q3" id="colFormLabel" >
                 </div>
             </div>
             <div class="row mb-3">
-                <label for="colFormLabel" class="col-sm-2 col-form-label">non of these words:</label>
-                <div class="col-sm-10">
+                <label for="colFormLabel" class="col-sm-2 col-form-label"><div style="width: max-content;">non of these words:</div></label>
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
                 <input type="text" class="form-control" name="q4" id="colFormLabel" >
                 </div>
             </div>
             <input type="text" name="q" hidden>
         </div>
         <div class="bottom" id="advancebottom">
-            <input type="submit" class="submitbutton" id="advancebutton" value="Advance Search" name="btnK">
+            <input type="submit" class="submitbutton" id="advancesubmit" value="Advance Search" name="btnK">
         </div>
     </form>
 </body>

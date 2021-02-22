@@ -118,7 +118,7 @@ h5{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#advancebutton{
+#advancebutton,#advancesubmit{
     background-color: #4d90fe;
     border: 1px solid #3079ed;
     border-radius: 2px;
@@ -126,6 +126,9 @@ h5{
     font-weight: bold;
     text-align: center;
     color: white;
+}
+#advancesubmit:hover{
+    background-color: #3f88fd;
 }
 
 .submitbutton:hover{
